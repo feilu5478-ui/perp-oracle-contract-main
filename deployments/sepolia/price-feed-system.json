@@ -1,0 +1,20 @@
+{
+  "timestamp": "2025-10-23T09:35:20.540Z",
+  "network": "sepolia",
+  "config": {
+    "chainlinkTimeout": 3600,
+    "twapInterval": 900,
+    "uniswapPool": "0x1c766A9FD8818B3e8b4f87Ca85Cc40b89843B604"
+  },
+  "contracts": {
+    "ChainlinkPriceFeedV3": "0x8bd62EB80748C61300cB9a0F81B6B3412E4Ba81D",
+    "PriceFeedDispatcher": "0xB640F67fA662B03a68dE21ceB6C1d6C9181e59ff",
+    "UniswapV3PriceFeed": "0x8De0AbB505a2B559903D21ba18ee0d5Ef71E733e"
+  },
+  "tokens": {
+    "baseToken": "TKA",
+    "quoteToken": "TKB",
+    "baseTokenAddress": "0x4d9c695d6559c71fe8990ea3791bd14214772931",
+    "quoteTokenAddress": "0xfa9329b27f4a1747a43188e0f6de1ed334c64be2"
+  }
+}

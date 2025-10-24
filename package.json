@@ -1,0 +1,92 @@
+{
+  "name": "@perp/perp-oracle-contract",
+  "version": "0.6.8",
+  "description": "Perpetual Protocol Curie (v2) oracle contracts - v0.5.0 is not an audited version",
+  "license": "GPL-3.0-or-later",
+  "author": {
+    "name": "Perpetual Protocol",
+    "email": "hi@perp.fi",
+    "url": "https://perp.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/perpetual-protocol/perp-oracle-contract.git"
+  },
+  "homepage": "https://perp.com/",
+  "keywords": [
+    "perpetual-protocol",
+    "perpetual-protocol-v2",
+    "perp",
+    "oracle",
+    "contracts",
+    "artifacts"
+  ],
+  "main": "index.js",
+  "files": [
+    "contracts",
+    "!contracts/test",
+    "artifacts/contracts/**/*.json",
+    "!artifacts/contracts/**/*.dbg.json",
+    "!artifacts/contracts/test/**/*",
+    "!artifacts/contracts/base/**/*"
+  ],
+  "scripts": {
+    "clean": "rm -rf typechain && rm -rf artifacts && rm -rf cache",
+    "test": "hardhat test",
+    "foundry-test": "forge test -vvv",
+    "build": "hardhat compile",
+    "prepare": "husky install",
+    "coverage": "forge coverage",
+    "coverage:report": "forge coverage --report lcov; genhtml lcov.info --output-directory coverage-out",
+    "lint": "npm run lint-contracts && npm run lint-tests",
+    "lint-contracts": "solhint 'contracts/**/*.sol'",
+    "lint-tests": "if grep -qr 'test' -e '.only('; then echo 'found .only() in tests'; exit 1; else echo 'not found .only() in tests'; fi",
+    "lint-staged": "lint-staged",
+    "flatten": "ts-node --files scripts/flatten.ts",
+    "slither": "ts-node --files scripts/slither.ts",
+    "deploy": "hardhat run scripts/deploy.ts --network sepolia"
+  },
+  "devDependencies": {
+    "@chainlink/contracts": "0.1.7",
+    "@defi-wonderland/smock": "2.2.0",
+    "@nomiclabs/hardhat-ethers": "2.0.5",
+    "@nomiclabs/hardhat-waffle": "2.0.3",
+    "@openzeppelin/contracts": "3.4.0",
+    "@typechain/ethers-v5": "7.2.0",
+    "@typechain/hardhat": "2.3.1",
+    "@types/chai": "4.3.0",
+    "@types/mocha": "9.0.0",
+    "@types/node": "15.6.1",
+    "@uniswap/v3-core": "https://github.com/Uniswap/uniswap-v3-core/tarball/v1.0.0",
+    "chai": "4.3.6",
+    "eslint-config-prettier": "8.3.0",
+    "ethereum-waffle": "3.4.4",
+    "ethers": "5.6.1",
+    "hardhat": "2.9.9",
+    "hardhat-dependency-compiler": "1.1.1",
+    "hardhat-gas-reporter": "1.0.8",
+    "husky": "6.0.0",
+    "lint-staged": "11.0.0",
+    "mocha": "9.1.1",
+    "prettier": "2.3.0",
+    "prettier-plugin-solidity": "1.0.0-beta.11",
+    "solc": "0.7.6",
+    "solhint": "3.3.6",
+    "solhint-plugin-prettier": "0.0.5",
+    "solidity-coverage": "0.7.17",
+    "truffle-flatten": "1.0.8",
+    "ts-generator": "0.1.1",
+    "ts-node": "10.0.0",
+    "typechain": "5.2.0",
+    "typescript": "4.3.2"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "prettier --write"
+    ],
+    "*.sol": [
+      "prettier --write",
+      "solhint"
+    ]
+  }
+}

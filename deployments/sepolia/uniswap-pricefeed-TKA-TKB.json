@@ -1,0 +1,8 @@
+{
+  "contract": "UniswapV3PriceFeed",
+  "address": "0x8De0AbB505a2B559903D21ba18ee0d5Ef71E733e",
+  "pool": "0x1c766A9FD8818B3e8b4f87Ca85Cc40b89843B604",
+  "baseToken": "TKA",
+  "quoteToken": "TKB",
+  "timestamp": "2025-10-23T09:35:20.540Z"
+}
