@@ -1,20 +1,20 @@
 {
-  "timestamp": "2025-10-23T09:35:20.540Z",
+  "timestamp": "2025-10-27T07:03:33.400Z",
   "network": "sepolia",
   "config": {
     "chainlinkTimeout": 3600,
     "twapInterval": 900,
-    "uniswapPool": "0x1c766A9FD8818B3e8b4f87Ca85Cc40b89843B604"
+    "uniswapPool": "0xd5b035544d07095ebbdc03370f6cf1cb49a77194"
   },
   "contracts": {
-    "ChainlinkPriceFeedV3": "0x8bd62EB80748C61300cB9a0F81B6B3412E4Ba81D",
-    "PriceFeedDispatcher": "0xB640F67fA662B03a68dE21ceB6C1d6C9181e59ff",
-    "UniswapV3PriceFeed": "0x8De0AbB505a2B559903D21ba18ee0d5Ef71E733e"
+    "ChainlinkPriceFeedV3": "0x4aB0123054Cc53909818d4bBC356c14A29fcd65B",
+    "PriceFeedDispatcher": "0x2aFd8B0B9CA476fA85A35bF7AB138d15fda35164",
+    "UniswapV3PriceFeed": "0x1dBd0A6512d3b2530687133101b8f70dB7cb3779"
   },
   "tokens": {
-    "baseToken": "TKA",
-    "quoteToken": "TKB",
-    "baseTokenAddress": "0x4d9c695d6559c71fe8990ea3791bd14214772931",
-    "quoteTokenAddress": "0xfa9329b27f4a1747a43188e0f6de1ed334c64be2"
+    "baseToken": "PBASE",
+    "quoteToken": "PQUOTE",
+    "baseTokenAddress": "0x118eb3f0d7c0ae4056328851b3ee7510108aa230",
+    "quoteTokenAddress": "0x41cffbce944ddcb71769dec7c7628a4cf88bad9f"
   }
 }

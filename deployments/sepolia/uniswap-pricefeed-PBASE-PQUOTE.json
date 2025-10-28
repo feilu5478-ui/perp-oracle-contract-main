@@ -1,0 +1,8 @@
+{
+  "contract": "UniswapV3PriceFeed",
+  "address": "0x1dBd0A6512d3b2530687133101b8f70dB7cb3779",
+  "pool": "0xd5b035544d07095ebbdc03370f6cf1cb49a77194",
+  "baseToken": "PBASE",
+  "quoteToken": "PQUOTE",
+  "timestamp": "2025-10-27T07:03:33.400Z"
+}

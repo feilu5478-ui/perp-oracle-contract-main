@@ -11,11 +11,11 @@ const SEPOLIA_CONFIG = {
 
 // 根据你提供的池子信息配置
 const UNISWAP_POOL_CONFIG = {
-  poolAddress: "0x1c766A9FD8818B3e8b4f87Ca85Cc40b89843B604",
-  baseToken: "TKA",
-  quoteToken: "TKB",
-  baseTokenAddress: "0x4d9c695d6559c71fe8990ea3791bd14214772931",
-  quoteTokenAddress: "0xfa9329b27f4a1747a43188e0f6de1ed334c64be2",
+  poolAddress: "0xd5b035544d07095ebbdc03370f6cf1cb49a77194",
+  baseToken: "PBASE",
+  quoteToken: "PQUOTE",
+  baseTokenAddress: "0x118eb3f0d7c0ae4056328851b3ee7510108aa230",
+  quoteTokenAddress: "0x41cffbce944ddcb71769dec7c7628a4cf88bad9f",
   baseTokenDecimals: 18,
   quoteTokenDecimals: 18,
   feeTier: 500 // 0.05%
@@ -450,10 +450,10 @@ if (require.main === module) {
 }
 
 export {
-    addUniswapPriceFeed,
-    PriceFeedDeployer,
-    SEPOLIA_CONFIG,
-    UNISWAP_POOL_CONFIG,
-    verifyContracts
+  addUniswapPriceFeed,
+  PriceFeedDeployer,
+  SEPOLIA_CONFIG,
+  UNISWAP_POOL_CONFIG,
+  verifyContracts
 };
 
