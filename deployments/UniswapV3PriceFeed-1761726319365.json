@@ -1,0 +1,11 @@
+{
+  "network": "unknown",
+  "deployer": "0x7c6332D587B13E38A677f1556809301D5A2E1B60",
+  "timestamp": "2025-10-29T08:25:19.365Z",
+  "contract": {
+    "name": "UniswapV3PriceFeed",
+    "address": "0x0AAd94106E1d0fA6df3ce4Db49cF901dbcCeEE8E",
+    "pool": "0xf6f23547538bf705360fcee6b89aff1baed3599b",
+    "transactionHash": "0x30e0fa491626de103f260318334b5044396ce33d63142b9aaeb3b8b174e6f893"
+  }
+}

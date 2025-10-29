@@ -1,0 +1,9 @@
+{
+  "network": "unknown",
+  "operator": "0x7c6332D587B13E38A677f1556809301D5A2E1B60",
+  "timestamp": "2025-10-29T08:46:15.290Z",
+  "contracts": {
+    "priceFeedDispatcher": "0x2aFd8B0B9CA476fA85A35bF7AB138d15fda35164",
+    "uniswapV3PriceFeed": "0x0AAd94106E1d0fA6df3ce4Db49cF901dbcCeEE8E"
+  }
+}
