@@ -28,8 +28,8 @@ const config: HardhatUserConfig = {
             allowUnlimitedContractSize: true,
         },
         sepolia: {
-            url: "https://eth-sepolia.g.alchemy.com/v2/0bUfpME8H-FSwi7tfsVrs1sGnRZpkghY",
-            accounts: ["0xaf23466f8e2a384181058e79627ec05efbf36b158d186d15f50245607675cb94"],
+            url: "",//填入url
+            accounts: [""],//填入私钥
             chainId: 11155111,
         },
     },
